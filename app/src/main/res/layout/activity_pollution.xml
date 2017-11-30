@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.bajaj.agam.spa.PotholeActivity">
+
+    <!--<Button-->
+        <!--android:layout_weight="0.2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="REFRESH DATA"-->
+        <!--android:id="@+id/refreshPol"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@android:color/holo_blue_light"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="0.8">
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:map="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/map_pollution"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="com.bajaj.agam.spa.MapsActivity"
+            android:layout_weight="1"/>
+
+        <com.github.mikephil.charting.charts.LineChart
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/linechart"></com.github.mikephil.charting.charts.LineChart>
+    </LinearLayout>
+
+    <Button
+        android:layout_weight="0.2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GO BACK"
+        android:id="@+id/backPol"
+        android:layout_gravity="bottom"
+        android:background="@android:color/holo_blue_light"/>
+
+</LinearLayout>
+
+
+
+
