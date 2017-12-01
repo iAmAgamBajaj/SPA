@@ -30,7 +30,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter pid here"
+        android:hint="Enter pid personal data, leave for global data"
         android:id="@+id/pid"/>
     <LinearLayout
         android:layout_width="match_parent"
